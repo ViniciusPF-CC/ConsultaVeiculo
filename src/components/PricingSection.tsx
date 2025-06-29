@@ -131,7 +131,7 @@ export default function PricingSection() {
     }
   ]
 
-  const handleSelectPlan = (planId: string) => {
+  const handleSelectPlan = (_planId: string) => {
     // Scroll to form
     document.getElementById('consulta-form')?.scrollIntoView({ behavior: 'smooth' })
   }

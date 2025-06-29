@@ -1,5 +1,3 @@
-import React from 'react'
-
 export default function Header() {
   const scrollToConsulta = () => {
     document.getElementById('consulta-form')?.scrollIntoView({ behavior: 'smooth' })
