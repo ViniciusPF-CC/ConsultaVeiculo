@@ -154,7 +154,7 @@ export default function ComparisonSection() {
           <div className="block lg:hidden">
             {/* Mobile Plan Selector */}
             <div className="grid grid-cols-3 gap-2 mb-8 bg-gray-100 p-2 rounded-xl">
-              {plans.map((plan, index) => (
+              {plans.map((plan) => (
                 <div key={plan.name} className="relative">
                   <div className={`p-4 rounded-lg text-center transition-all duration-300 ${getColorClasses(plan.color, plan.popular)}`}>
                     <div className="font-bold text-sm mb-1">{plan.name}</div>
@@ -204,7 +204,7 @@ export default function ComparisonSection() {
 
               {/* Mobile Action Buttons */}
               <div className="grid grid-cols-3 gap-3">
-                {plans.map((plan, index) => (
+                {plans.map((plan) => (
                   <button
                     key={plan.name}
                     onClick={scrollToConsulta}
@@ -232,7 +232,7 @@ export default function ComparisonSection() {
                       <th className="text-left p-6 font-bold text-gray-900 w-1/4">
                         Tipo
                       </th>
-                      {plans.map((plan, index) => (
+                      {plans.map((plan) => (
                         <th key={plan.name} className={`p-6 text-center w-1/4 ${getColorClasses(plan.color, plan.popular)}`}>
                           <div className="font-bold text-lg mb-1">{plan.name}</div>
                           <div className="text-2xl font-bold mb-1">{plan.price}</div>
@@ -276,7 +276,7 @@ export default function ComparisonSection() {
                     {/* Footer with buttons */}
                     <tr className="bg-gray-50 border-t border-gray-200">
                       <td className="p-6"></td>
-                      {plans.map((plan, index) => (
+                      {plans.map((plan) => (
                         <td key={plan.name} className="p-6 text-center">
                           <button
                             onClick={scrollToConsulta}
